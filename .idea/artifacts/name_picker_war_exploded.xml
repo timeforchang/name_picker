@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="name_picker:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/name_picker_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="name_picker/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="name_picker" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
