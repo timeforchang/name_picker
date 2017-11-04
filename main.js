@@ -36,6 +36,8 @@ function signIn() {
         var user = result.user;
         // ...
         document.getElementById("mainDiv").style.display = "block";
+        document.getElementById("signOut").style.display = "block";
+        document.getElementById("signIn").style.display = "none";
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -45,5 +47,16 @@ function signIn() {
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
         // ...
+    });
+}
+
+function signOut() {
+    firebase.auth().signOut().then(function() {
+        // Sign-out successful.
+        document.getElementById("mainDiv").style.display = "none";
+        document.getElementById("signOut").style.display = "none";
+        document.getElementById("signIn").style.display = "block";
+    }).catch(function(error) {
+        // An error happened.
     });
 }
