@@ -46,5 +46,4 @@ function signIn() {
         var credential = error.credential;
         // ...
     });
-    window.location.href = 'name_picker/home.html';
 }
