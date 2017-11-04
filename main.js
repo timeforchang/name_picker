@@ -15,6 +15,7 @@ function getName() {
             if (i == rand) {
                 var k = keys[i];
                 var name = vals[k];
+                vals[k].remove();
                 returnName = name;
             }
         }
