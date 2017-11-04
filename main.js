@@ -35,6 +35,7 @@ function signIn() {
         // The signed-in user info.
         var user = result.user;
         // ...
+        document.getElementById("mainDiv").style.display = "block";
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
