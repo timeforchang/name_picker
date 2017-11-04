@@ -6,16 +6,30 @@
 
 </head>
 <body>
-    Please sign in first because Google is a stickler for rules <br>
-    <!--<button id = "signIn" onclick = "signIn()">Sign In</button>-->
-    <!--<button id = "signOut" onclick = "signOut()" style = "display: none">Sign Out</button>-->
-    <div class = "mainDiv">
+    <p id = "welcome">Please sign in first because Google is a stickler for rules <br></p>
+    <button id = "signIn" onclick = "signIn()">Sign In</button>
+    <button id = "signOut" onclick = "signOut()" style = "display: none">Sign Out</button>
+    <div id = "mainDiv" style = "display: none">
         Hello and welcome to the name picker <br>
         I haven't had time to make this page look nice so bear with me <br> <br>
-        <textarea id = "databaseID" placeholder = "Enter list ID here..."></textarea><br>
+        <textarea id = "databaseID" placeholder = "Enter list ID here"></textarea><br>
+        <textarea id = "name" placeholder = "Enter name here"></textarea><br>
         Click this button to get a name: <br>
         <button id = "getBtn" onclick = "getName()">Click Here</button>
-        <h1 id = "returnedName"> </h1>
+        <h1 id = "returnedName"> </h1> <br> <br>
+    </div>
+
+    <div id = "addDiv" style = "display: none">
+        Click this button if you want to make a new list: <br>
+        <button id = "makeBtn" onclick = "makeList()">Click Here</button>
+        <p id = "listID" style = "display: block"> </p> <br>
+    </div>
+
+
+    <div id = "listDiv" style = "display: none">
+        Insert a name here<br> <br>
+        Click this button: <br>
+        <button id = "makeBtn" onclick = "makeList()">Click Here</button>
     </div>
 
 <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
