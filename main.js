@@ -57,7 +57,7 @@ function signIn() {
     console.log("logged in");
     document.getElementById("mainDiv").style.display = "block";
     document.getElementById("signOut").style.display = "block";
-    document.getElementById("addDiv").style.display = "block";
+    //document.getElementById("addDiv").style.display = "block";
     document.getElementById("signIn").style.display = "none";
     document.getElementById("welcome").style.display = "none";
 }
@@ -67,7 +67,7 @@ function signOut() {
     // Sign-out successful.
     document.getElementById("mainDiv").style.display = "none";
     document.getElementById("signOut").style.display = "none";
-    document.getElementById("addDiv").style.display = "none";
+    //document.getElementById("addDiv").style.display = "none";
     document.getElementById("signIn").style.display = "block";
     document.getElementById("welcome").style.display = "block";
 }
