@@ -39,12 +39,15 @@ button:hover {
     transform: translateY(1px);
     transition: 0.2s;
     box-shadow: 0px 4px #ddd;
+    cursor: pointer;
 }
 
 button:active {
     transform: translateY(5px);
     transition: 0.2s;
     box-shadow: 0px 0px #ddd;
+    cursor: pointer;
+    background-color: #eee;
 }
 
 #signOut {
