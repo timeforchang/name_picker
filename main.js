@@ -39,7 +39,7 @@ function getName() {
 
 function makeList() {
     //repopulate
-    var names = ['Justin', 'Andrew', 'Allen', 'Frank', 'Yu Hong', 'Shannon', 'Vivian'];
+    var names = ['Justin', 'Andrew', 'Allen', 'Frank', 'Yu Hong', 'Shannon', 'Vivian', 'Natalie'];
     var firebaseRef = firebase.database().ref();
     var newID = firebaseRef.push();
     document.getElementById("listID").innerHTML = "Your new list's ID is: " + newID.key;
